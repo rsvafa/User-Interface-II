@@ -1,1 +1,201 @@
-/* Add CSS styling here */
+@font-face {
+     font-family: 'MyWebFont';
+     src:    
+         url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+         /* For Local Font Files
+         url('myfont.woff2') format('woff2'),
+         url('myfont.woff') format('woff')
+         url('myfont.eot') format('eot'),
+         url('myfont.otf') format('opentype'),
+         url('myfont.svg') format('svg'),;
+         url('myfont.ttf') format('truetype'),
+         */
+
+    font-weight: normal /* 400 */;
+    font-style: normal;   
+}
+@font-face {
+    font-family: 'MyWebFont' /* Can Use Same Font Family as Normal */;
+     src:    
+         url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@700&display=swap');
+         /* For Local Font Files
+         url('myfont.woff2') format('woff2'),
+         url('myfont.woff') format('woff')
+         url('myfont.eot') format('eot'),
+         url('myfont.otf') format('opentype'),
+         url('myfont.svg') format('svg'),;
+         url('myfont.ttf') format('truetype'),
+         */
+
+    font-weight: bold /* 700 */;
+    font-style: normal;   
+}
+@font-face {
+    font-family: 'MyWebFont' /* Can Use Same Font Family as Normal */;
+     src:    
+         url('https://fonts.googleapis.com/css2?family=Piazzolla:ital@1&display=swap');
+         /* For Local Font Files
+         url('myfont.woff2') format('woff2'),
+         url('myfont.woff') format('woff')
+         url('myfont.eot') format('eot'),
+         url('myfont.otf') format('opentype'),
+         url('myfont.svg') format('svg'),;
+         url('myfont.ttf') format('truetype'),
+         */
+
+    font-weight: normal /* 400 */;
+    font-style: italic;   
+}
+/*  if you want a margin of a certain % for equal-sized
+    boxes then follow this forumla:
+    Box Width = (100 - ((margin% * # of boxes) * 2)) / (# of boxes)
+    Example: Box Width = (100 - (1 * 2)) / 4 = 23%
+    So if you have 4 equal sized boxes with a margin
+    of 1% your box width will be 23% for dynamic sizing
+*/
+body {
+    font-family: 'MyWebFont', 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.6rem;
+    color: black;
+    background-color: limegreen;
+}
+.main-container {
+    /* Can change width by percentage for responsive or px for fixed */
+    width: 60% /* 800px */;
+    height: 100%;
+    border: solid black 1px;
+    margin: 0 auto; /* centers content */
+    padding: 10px; /* can change */
+    background-color: darkorchid;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    /* Can change width by percentage for responsive or px for fixed */
+    width: 100% /* #ofpx */;
+    height: 300px;
+    border: solid black 1px;
+    /* margin: 0 auto;  /* centers content */
+}
+.header-div-main-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    border: solid black 1px;
+}
+h1 {
+    text-align: center;
+    font-family: 'MyWebFont', 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: bold;
+    border: solid black 1px;
+}
+nav {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    /* Can change width by percentage for responsive or px for fixed */
+    width: 100% /* #ofpx */;
+    border: solid black 1px;
+    margin: 0 auto; /* centers content */
+}
+nav div {
+    list-style-type: none;
+    margin: 10px /* auto added here will center all items in total width */;
+    padding: 0;
+    text-align: center;
+}
+nav div a {
+    margin: 0 8px; /* spacing between each link */
+    padding: 3px 8px; /* spacing around each link */
+    color: purple;
+    background: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+nav div a:hover {
+    color: lime;
+    background: black;
+}
+.header-div-main-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: solid black 1px;
+    
+}
+.header-div-main-2a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 8px;
+    margin: 8px;
+    background-image: url("http://placekitten.com/300/300");
+    background-color: purple;
+    border: solid black 1px;
+}
+/* header img {
+    width: 30%;
+    height: 17rem;
+    object-fit: cover;
+} */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* Can change width by percentage for responsive or px for fixed */
+    width: 100% /* #ofpx */;
+    height: 600px;
+    border: solid black 1px;
+    margin: 0 auto; /* centers content */
+}
+main div {
+    width: 150px;
+    height; 100px;
+    margin: 0 auto;
+    background-color: purple;
+    border: solid black 1px;
+}
+h2 {
+    text-align: center;
+    font-family: 'MyWebFont', 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: bold;
+}
+p {
+    /* Can change width by percentage for responsive or px for fixed */
+    width: 100% /* #ofpx */;
+    border: solid black 1px;
+    margin: 0 auto; /* centers content */
+}
+section {
+    /* Can change width by percentage for responsive or px for fixed */
+    width: 100% /* #ofpx */;
+    border: solid black 1px;
+    margin: 0 auto; /* centers content */
+}
+/* If there is a P in Section then P under Header styles UNLESS edited to Ps are styled seperate */
+footer {
+    /* Can change width by percentage for responsive or px for fixed */
+    width: 100% /* #ofpx */;
+    border: solid black 1px;
+    margin: 0 auto; /* centers content */
+}
+/* If there is a Nav in Footer then Nav under Header styles UNLESS edited to Navs are styled seperate */
+/* ^ same for ul */
+/* ^ same for li */
